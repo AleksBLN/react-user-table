@@ -5,7 +5,7 @@ export default ({user}) => (
 		<p>Выбран пользователь <b>{`${user.firstName} ${user.lastName}`}</b></p>
 		{user.description
 			? <p>
-				Описание:
+				Описание: <br />
 				<textarea defaultValue={user.description} />
 			  </p>
 			: <p>No description</p>

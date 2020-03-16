@@ -6,12 +6,17 @@ export default ({ data, itemsPerPage, onPaginate }) => {
 	for (let i = 1; i <= Math.ceil(data.length / itemsPerPage); i++) {
 		pageNumbers.push(i);
 	}
+
 	return (
 		<nav>
 			<ul className="pagination">
 				{pageNumbers.map(page => (
 					<li key={page} className="page-item">
-						<a onClick={() => onPaginate(page)} className="page-link" href="!#">
+						<a onClick={(e) => {
+								e.preventDefault();
+								onPaginate(page)
+							}}
+							className="page-link" href="!#">
 							{page}
 						</a>
 					</li>

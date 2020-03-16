@@ -1,2 +1,2 @@
 Table component with search, sort and add item functional
-[link to app](http://test-table-react.surge.sh/ "http://test-table-react.surge.sh/")
+[link to app](http://user-table-react-test.surge.sh/ "http://user-table-react-test.surge.sh/")
